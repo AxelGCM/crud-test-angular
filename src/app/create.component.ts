@@ -5,10 +5,10 @@ import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './nuevo.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class addComponent implements OnInit{
 
   public administrators: Administrator[] | undefined;
   constructor(private administratorService: AdministratorService){}

@@ -1,1 +1,501 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --main-color: #DD2F6E;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+    --border-color: #E8EAF0;
+    --text-color: #323232;
+    --font-color: #4FB9BB;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    width: 259px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* White */
+    background: #FFFFFF;
+    border-right: .5px solid var(--border-color);
+}
+
+.sidebar-brand {
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.sidebar-brand img {
+    width: 72px;
+    height: 59px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.main-content {
+    margin-left: 259px;
+}
+
+.sidebar-menu a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.section1 {
+    margin-left: 10px;
+}
+
+.section {
+    margin-left: 5px;
+}
+
+.section3 {
+    margin-left: 7px;
+}
+
+.section4 {
+    margin-left: 9px;
+}
+
+.sidebar-menu li {
+    padding: 10px 1rem 10px 15%;
+    border: .5px solid var(--border-color);
+}
+
+.sidebar-menu li span:first-child {
+    color: var(--font-color);
+}
+
+.header {
+    background: var(--font-color);
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.header li {
+    display: inline-block;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.bar,
+.search,
+.adri {
+    color: #FFFFFF;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    position: left;
+}
+
+.v1 {
+    position: absolute;
+    width: 48px;
+    height: 0px;
+    opacity: 0.32;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.circular--square {
+    border-radius: 50%;
+}
+
+main {
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.section li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.section span {
+    color: var(--font-color);
+}
+
+.in a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.insub a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--font-color);
+}
+
+.footer li {
+    display: inline-block;
+}
+
+.footer {
+    padding: 1rem 1rem 1rem 1rem;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+
+.helptext {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.helpbox {
+    background: #E8EAF0;
+    padding: 1rem 10px 1rem 1rem;
+    height: 80px;
+}
+
+.helpbox span {
+    padding-left: 200%;
+}
+
+.copy {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.action {
+    margin-left: 259;
+}
+
+.action h1 {
+    margin-left: 259;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.barcontent {
+    margin-top: 1rem;
+}
+
+.input-group {
+    background: #E8EAF0;
+    opacity: 0.40;
+    border-radius: 32px;
+}
+
+.input-group input {
+    border: none;
+    padding: 5px 0 5px 3px;
+    background: #E8EAF0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 0px 32px 32px 0px;
+}
+
+::placeholder {
+    color: #323232;
+    opacity: 1;
+}
+
+.input-group span {
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-right: 4px;
+}
+
+.barcontent li {
+    display: inline-block;
+}
+
+.barright {
+    padding: 0 2rem 1rem 1rem;
+    position: absolute;
+    right: 0%;
+}
+
+.search-content {
+    align-items: center;
+    padding: 12px 16px;
+    background: #E8EAF0;
+    border-radius: 4px;
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filter-content a {
+    background: #4FB9BB;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+}
+
+.button-des {
+    align-items: center;
+    padding: 12px 16px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid var(--font-color);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.button-add {
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--font-color);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.ul-actions li {
+    display: inline-block;
+}
+
+.delete {
+    border: none;
+    color: #EB5757;
+    background: transparent;
+}
+
+.view {
+    color: #323232;
+}
+
+.edit {
+    color: #4FB9BB;
+}
+
+.filas p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.columnas p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.status-active {
+    background: #4caf4f94;
+    color: #4CAF50;
+    text-align: center;
+}
+
+.status-inactive {
+    background: #eb5757a8;
+    color: #EB5757;
+    text-align: center;
+}
+
+.user-profile li {
+    display: inline-block;
+}
+
+.image-user {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.bar-image {
+    /* White */
+    background: #FFFFFF;
+    /* /Tertiary */
+    border: 1px solid #E8EAF0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    width: 350px;
+    height: 290px;
+}
+
+.img-icon {
+    height: 150px;
+    width: 150px;
+    color: #323232;
+    border-radius: 50%;
+    border: 3px solid #323232;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.input-image {
+    padding: 1rem 1rem 1rem 1rem;
+    border: 1px solid var(--font-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.form-control {
+    width: 60%;
+}
+
+.name {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.email {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.popup .btn-cerrar-popup {
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.font-down,
+.font-down .bottom {
+    background: #e8eaf0ab;
+    bottom: 0;
+    margin: 0;
+}
+
+.bottom button {
+    margin: 10px 20px 10px 20px;
+}
+
+.admin-delete,
+.dates-user {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.dates-user li {
+    margin: 10px 20px 10px 20px;
+}
+
+.name-main {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.name-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.name-content {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.other-li {
+    padding: 1rem 6rem 1rem 1rem;
+}
+
+.left-li {
+    padding: 1rem 6rem 1rem 0;
+}
+
+.name-l1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.name-l2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.image-check {
+    width: 52px;
+    height: 52px;
+}
