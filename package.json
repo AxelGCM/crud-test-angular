@@ -6,12 +6,13 @@
     },
     "scripts": {
         "ng": "ng",
-        "heroku-postbuild": "ng build --prod && npm install -g http-server-spa",
         "start": "ng serve",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "start:heroku": "node dist/server",
+        "postinstall": "npm run build:ssr"
     },
     "private": true,
     "dependencies": {
