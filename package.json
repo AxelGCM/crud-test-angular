@@ -6,10 +6,11 @@
     },
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
+        "heroku-postbuild": "ng build --prod && npm install -g http-server-spa",
+        "start": "http-server-spa dist/angular-reddit-clone index.html $PORT",
         "build": "ng build",
-        "lint": "ng lint",
         "test": "ng test",
+        "lint": "ng lint",
         "e2e": "ng e2e"
     },
     "private": true,
