@@ -7,7 +7,7 @@
     },
     "scripts": {
         "ng": "ng",
-        "start": "ng build --prod && npm install -g http-server-spa",
+        "start": "ng serve",
         "build": "ng build",
         "lint": "ng lint",
         "test": "ng test",
