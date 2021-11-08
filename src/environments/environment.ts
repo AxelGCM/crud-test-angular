@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://spring-reddit-clone-axelc.herokuapp.com/'
+  apiBaseUrl: 'https://spring-reddit-clone-axelc.herokuapp.com/'
 };
 
 /*
