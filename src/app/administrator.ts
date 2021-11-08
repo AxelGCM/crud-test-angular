@@ -1,4 +1,3 @@
-
 export class Administrator{
   id:number = 0;
   icon: string = "";

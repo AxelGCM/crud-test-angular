@@ -1,6 +1,5 @@
 import { Router } from '@angular/router';
 import { AdministratorService } from './administrator.service';
-import { Administrator } from './administrator';
 import { Component, OnInit } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 

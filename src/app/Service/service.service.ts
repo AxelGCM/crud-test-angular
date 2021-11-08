@@ -1,8 +1,9 @@
-import { Administrator } from './../administrator';
+
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { environment } from './../../environments/environment';
+import { environment } from 'src/environments/environment';
 import { Injectable } from '@angular/core';
+import { Administrator } from 'src/app/administrator';
 
 @Injectable({providedIn: 'root'})
 export class ServiceService {

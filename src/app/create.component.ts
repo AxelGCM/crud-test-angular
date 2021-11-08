@@ -1,7 +1,7 @@
 import { AdministratorService } from './administrator.service';
-import { Administrator } from './administrator';
 import { Component, OnInit } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
+import { Administrator } from 'src/app/administrator';
 
 @Component({
   selector: 'app-root',

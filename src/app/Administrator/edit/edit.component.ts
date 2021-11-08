@@ -1,8 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { ServiceService } from './../../Service/service.service';
-import { Administrator } from './../../administrator';
+import { ServiceService } from 'src/app/Service/service.service';
 import { Component, OnInit } from '@angular/core';
+import { Administrator } from 'src/app/administrator';
 
 @Component({
   selector: 'app-edit',

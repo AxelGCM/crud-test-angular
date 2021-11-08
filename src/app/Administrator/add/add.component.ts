@@ -1,9 +1,11 @@
+
+
 import { HttpErrorResponse } from '@angular/common/http';
-import { Administrator } from './../../administrator';
-import { ServiceService } from './../../Service/service.service';
+import { ServiceService } from 'src/app/Service/service.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Administrator } from 'src/app/administrator';
 
 
 @Component({
@@ -13,7 +15,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AddComponent implements OnInit {
   statusValue: String = "login.png";
-  administrator: Administrator = new Administrator();
+  administrator: Administrator= new Administrator();
   constructor(private router: Router, private service:ServiceService) { }
 
   ngOnInit(): void {

@@ -1,9 +1,9 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Administrator } from './../../administrator';
 import { Router } from '@angular/router';
-import { ServiceService } from './../../Service/service.service';
+import { ServiceService } from 'src/app/Service/service.service';
 import { Component, OnInit } from '@angular/core';
 import { Version } from '@angular/compiler';
+import { Administrator } from 'src/app/administrator';
 
 @Component({
   selector: 'app-show',

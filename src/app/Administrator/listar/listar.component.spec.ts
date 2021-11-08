@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ListarComponent } from 'src/app/Administrator/listar/listar.component';
 
-import { ListarComponent } from './listar.component';
 
 describe('ListarComponent', () => {
   let component: ListarComponent;
