@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { AdministratorService } from './administrator.service';
 import { Administrator } from './administrator';
 import { Component, OnInit } from '@angular/core';
@@ -8,24 +9,9 @@ import { HttpErrorResponse } from '@angular/common/http';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
 
-  public administrators: Administrator[] | undefined;
-  constructor(private administratorService: AdministratorService){}
 
-  ngOnInit(){
-    this.getAdministrators();
-  }
 
-  public getAdministrators(): void {
-    this.administratorService.getAdministrators().subscribe(
-      (response: Administrator[]) => {
-          this.administrators = response;
-      },
-      (error: HttpErrorResponse) => {
-          alert(error.message);
-      }
-    );
-  }
 
 }

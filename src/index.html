@@ -6,13 +6,128 @@
     <title>Administratorapp</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/gli.png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" type="text/css">
     <link rel="stylesheet" href="assets/styles.css">
-    <app-root></app-root>
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <img src="assets/images/gli.png" alt="Imagen de GLI">
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a>
+                        <span class="far fa-user">
+                    </span><span class="section1">Administradores</span>
+                    </a>
+                </li>
+                <li>
+                    <a><span class="fa fa-book">
+                </span><span class="section1">Catálogos</span>
+                </a>
+                </li>
+                <li>
+                    <a><span class="fas fa-users">
+                </span><span class="section">Líderes</span>
+                </a>
+                </li>
+                <li>
+                    <a><span class="fas fa-user-friends">
+                </span><span class="section">Usuarios</span>
+                </a>
+                </li>
+                <li>
+                    <a><span class="fas fa-users">
+                </span><span class="section">Mi empresa</span>
+                </a>
+                </li>
+                <li>
+                    <a><span class="fas fa-apple-alt">
+                </span><span class="section1">Cursos</span>
+                </a>
+                </li>
+                <li>
+                    <a><span class="fas fa-user-friends">
+                </span><span class="section">Recompensas</span>
+                </a>
+                </li>
+                <li>
+                    <a><span class="fas fa-calendar-alt">
+                </span><span class="section1">Eventos</span>
+                </a>
+                </li>
+                <li>
+                    <a><span class="fas fa-exclamation-triangle">
+                </span><span class="section3">Notificaciones</span>
+                </a>
+                </li>
+                <li>
+                    <a><span class="fas fa-chart-line">
+                </span><span class="section4">Reportes</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <div class="helpbox">
+                <ul>
+                    <li class="helptext">
+                        <p>¿Nesecitas ayuda?</p>
+                        <p class="underline">Ir a Sección de ayuda</p>
+                    </li>
+                    <li>
+                        <span class="fas fa-puzzle-piece"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>&copy; Copyright GLI 2021</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <ul>
+                <li>
+                    <div class="bar">
+                        <span class="fas fa-search"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="v1"></div>
+                </li>
+                <li>
+                    <div class="image-user">
+                        <img class="circular--square" src="assets/images/iconpng.png" alt="algo">
+                    </div>
+                </li>
+                <li>
+                    <div class="user-wrapper">
+                        <div class="bar">
+                            <h4 class="adri">Adrian Stefan</h4>
+                            <small>Recursos Humanos</small>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="search">
+                        <span class="fas fa-sign-out-alt"></span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <app-root></app-root>
+
+    </div>
+    <script src="assets/js/app.js"></script>
+
     </body>
 
 </html>

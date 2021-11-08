@@ -1,0 +1,26 @@
+<main>
+    <div class="section">
+        <ul>
+            <li class="in">
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <span class="fas fa-angle-right"></span>
+            </li>
+            <li>
+                <div class="insub">
+                    <a (click)="Listar()">Administradores</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>Administradores de la consola</h4>
+        <img src="assets/images/cheque.png" alt="Check-image" class="image-check">
+        <p class="name-l1">Cambios guardados</p>
+        <p class="name-l2">Tu administrador se ha guardado con éxito</p>
+    </div>
+
+    <button type="submit" (click)="Listar()" class="button-add">Regresar a mis administradores</button>
+</main>

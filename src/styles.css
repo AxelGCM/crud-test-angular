@@ -300,6 +300,10 @@ main {
     display: inline-block;
 }
 
+.ul-actions button {
+    border: none;
+}
+
 .delete {
     border: none;
     color: #EB5757;
@@ -498,4 +502,12 @@ main {
 .image-check {
     width: 52px;
     height: 52px;
+}
+
+.content-all input {
+    width: 50%;
+}
+
+.content-all select {
+    width: 50%;
 }

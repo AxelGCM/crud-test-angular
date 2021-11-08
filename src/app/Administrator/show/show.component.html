@@ -1,0 +1,57 @@
+<main>
+    <div class="section">
+        <ul>
+            <li class="in">
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <span class="fas fa-angle-right"></span>
+            </li>
+            <li>
+                <div class="insub">
+                    <a (click)="Listar()">Administradores</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div>
+        <h4>Perfil adminstrador</h4>
+    </div>
+    <div class="barcontent">
+        <img class="image-user" src="assets/images/{{administrator.icon}}" alt="Imagen de carga">
+        <p class="name-main">{{administrator.names}}</p>
+        <ul class="section">
+            <li class="left-li">
+                <p class="name-title">Nombre(s)</p>
+                <p class="name-content">{{administrator.names}}</p>
+            </li>
+            <li class="other-li">
+                <p class="name-title">Apellidos</p>
+                <p class="name-content">{{administrator.last_name}}</p>
+            </li>
+            <li class="other-li">
+                <p class="name-title">Correo Electrónico</p>
+                <p class="name-content">{{administrator.email}}</p>
+            </li>
+        </ul>
+        <ul class="section ul-add">
+            <li class="left-li">
+                <p class="name-title">Área</p>
+                <p class="name-content">{{administrator.area}}</p>
+            </li>
+            <li class="other-li">
+                <p class="name-title">Status</p>
+
+                <p class="name-content" *ngIf="administrator.status == true; else elseStatus">Activo</p>
+                <ng-template #elseStatus>
+                    <p class="name-content">Inactivo</p>
+                </ng-template>
+
+            </li>
+        </ul>
+        <hr>
+        <button (click)="Edit(administrator)" class="button-add">Editar administtrador</button>
+    </div>
+</main>
