@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'http://spring-reddit-clone-axelc.herokuapp.com/'
+  apiBaseUrl: 'http://spring-reddit-clone-axelc.herokuapp.com/'
 };
