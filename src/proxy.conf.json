@@ -1,0 +1,7 @@
+{
+    "/administrator/*": {
+        "target": "https://spring-reddit-clone-axelc.herokuapp.com",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
