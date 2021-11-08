@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
 // Serve static files
 app.use(express.static(__dirname + '/dist/administratorapp'));
@@ -12,9 +13,5 @@ app.get('/*', function(req, res) {
 
 // default Heroku port
 app.listen(process.env.PORT || 4200);
-
-const express = require('express');
-const cors = require('cors');
-const app = express();
 
 app.use(cors());
