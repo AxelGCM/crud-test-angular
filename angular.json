@@ -71,6 +71,10 @@
                         },
                         "development": {
                             "browserTarget": "administratorapp:build:development"
+                        },
+                        "options": {
+                            "browserTarget": "administratorapp:build",
+                            "proxyConfig": "src/proxy.conf.json"
                         }
                     },
                     "defaultConfiguration": "development"
